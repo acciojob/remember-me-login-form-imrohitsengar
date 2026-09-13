@@ -31,6 +31,8 @@ function handleFormSubmit(e) {
     // Edge case: Remove credentials if unchecked on submit
     localStorage.clear();
   }
+	 usernameInput.value = "";
+  passwordInput.value = "";
   checkExistingUser();
 }
 function handleExistingLogin() {
