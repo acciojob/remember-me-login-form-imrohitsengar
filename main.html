@@ -8,6 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <form id="loginForm" onsubmit="handleFormSubmit(event)">
+    <div>
+      <input type="text" id="username" placeholder="Username" required>
+    </div>
+    <div>
+      <input type="password" id="password" placeholder="Password" required>
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Remember me.</label>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+	<button id="existing" onclick="handleExistingLogin()">Login as existing user</button>
     <script type="text/javascript" src="./script.js">
 </script>
 
